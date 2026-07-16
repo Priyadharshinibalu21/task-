@@ -69,7 +69,7 @@ def login_required(f):
 @app.route('/')
 def home():
     if 'user_id' in session:
-        return redirect(url_for('dashboard'))
+        return redirect(url_for('dashboard###'))
     return redirect(url_for('login'))
  
  
